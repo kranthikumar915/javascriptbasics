@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASIC</title>
+</head>
+<body>
+    <h3>Write a Program to find out Largest Number</h3>
+
+    <script>
+        var p = Number(prompt('Enter the value of p ?'));
+        var q = Number(prompt('Enter the value of q ?'));
+        var r = Number(prompt('Enter the value of r ?'));
+        var s = Number(prompt('Enter the value of s ?'));
+        var t = Number(prompt('Enter the value of t ?'));
+
+        if(p > q && p > r && p > s && p > t) {
+            document.write(`<h1> p = ${p} is max number </h1>`);
+        } 
+        else if (q > p && q > r && q > s && q > t) {
+            document.write(`<h1> q = ${q} is max number </h1>`);
+        }
+        else if (r > p && r > q && r > s && r > t) {
+            document.write(`<h1> r = ${r} is max number </h1>`);
+        }
+        else if (s > p && s > q && s > r && s > t) {
+            document.write(`<h1> s = ${s} is max number </h1>`);
+        }
+        else if (t > p && t > q && t > r && t > s) {
+            document.write(`<h1> t = ${t} is max number </h1>`);
+        } else {
+            document.write(`<h1> Check your input </h1>`);
+        }
+
+
+    </script>
+</body>
+</html>

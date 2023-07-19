@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMASCRIPT</title>
+</head>
+<body>
+    <h1>Inheritance inside class</h1>
+
+    <script>
+        // super class
+        class Course {
+            constructor(ti,fe) {
+                this.title = ti;
+                this.fee = fe;
+            }
+
+            getCourseDetails() {
+                document.write(`<h1> course name = ${this.title}, and fee = ${this.fee} </h1>`);
+            }
+        }
+
+        // base class
+        class User extends Course {
+            constructor(x,y) {
+                super(x,y);     // super method call refers to super class constructor
+            }
+        }
+
+        let x = new User('MERN', 12345);
+        x.getCourseDetails();
+    </script>
+</body>
+</html>

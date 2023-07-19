@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT ARRAY METHODS</title>
+</head>
+<body>
+    <h3> push() and pop() </h3>
+        <!-- push(value) => add new item at ending position
+             pop() => remove item from end
+        -->
+
+        <script>
+            var x = ['blue', 'white'];
+            document.write(`<h3> Before push = ${ x }</h3>`);
+
+            x.push("red");
+            document.write(`<h3> After push = ${ x }</h3>`);
+
+            x.push("yellow");
+            document.write(`<h3> After push = ${ x }</h3>`);
+
+            x.pop();
+            document.write(`<h3> After pop = ${ x }</h3>`);
+
+            x.pop();
+            document.write(`<h3> After pop = ${ x }</h3>`);
+
+            x.pop();
+            document.write(`<h3> After pop = ${ x }</h3>`);
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMASCRIPT</title>
+</head>
+<body>
+    <h3>Object.defineProperties()</h3>
+
+    <script>
+        "use strict"
+
+        var user = {};
+
+        Object.defineProperties(user, {
+            'name': {
+                value: 'Suma',
+                writable: true
+            },
+            'email': {
+                value: 'suma@gmail.com',
+                writable: false
+            },
+            'age': {
+                value: 30,
+                writable: true
+            }
+        });
+
+        console.log('Name', user.name);
+        console.log('Email', user.email);
+        console.log('Age', user.age);
+
+        try {
+            user.name = 'Abhi',
+            user.email = 'abhi@gmail.com';
+            user.age = 25;
+        } catch (error) {
+            console.log(error.message);
+        }
+
+        console.log('Name', user.name);
+        console.log('Email', user.email);
+        console.log('Age', user.age);
+
+    </script>
+</body>
+</html>

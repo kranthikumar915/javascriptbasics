@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT EVENTS</title>
+    <style>
+        #txt {
+            background-color: teal;
+            color: #fff;
+            padding: 12px;
+            width: 50%;
+            height: 500px;
+            overflow: auto;
+        }
+
+        h4{
+            padding: 10px;
+            background-color: crimson;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h3>onmousewheel() and onscroll()</h3>
+
+    <h4 id="output"></h4>
+
+    <div id="txt" onmousewheel="wheelHandler()"  onscroll="wheelHandler()">
+        <p>
+            Loremipsum dolor, sit amet consectetur adipisicing elit. Eaque, magni ex dolorum soluta hic doloribus officia dolor nulla iusto laboriosam excepturi! Doloribus inventore eaque distinctio adipisci voluptatibus, fugiat nulla repellat repudiandae doloremque molestiae ut, quibusdam tenetur nostrum laborum, quo ipsum omnis sequi. Corrupti ullam esse, numquam minus nesciunt cupiditate vero sequi, quaerat, accusantium deserunt commodi explicabo exercitationem aspernatur excepturi eum. Distinctio hic tempora laborum, aliquid dicta aspernatur cumque deleniti tempore necessitatibus consequatur suscipit quasi voluptatem quia tenetur ad! Voluptate, asperiores sit voluptatem facere animi illum enim! Modi accusantium, nisi laborum quasi porro odio dicta, a totam non recusandae repellat blanditiis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, magni ex dolorum soluta hic doloribus officia dolor nulla iusto laboriosam excepturi! Doloribus inventore eaque distinctio adipisci voluptatibus, fugiat nulla repellat repudiandae doloremque molestiae ut, quibusdam tenetur nostrum laborum, quo ipsum omnis sequi. Corrupti ullam esse, numquam minus nesciunt cupiditate vero sequi, quaerat, accusantium deserunt commodi explicabo exercitationem aspernatur excepturi eum. Distinctio hic tempora laborum, aliquid dicta aspernatur cumque deleniti tempore necessitatibus consequatur suscipit quasi voluptatem quia tenetur ad! Voluptate, asperiores sit voluptatem facere animi illum enim! Modi accusantium, nisi laborum quasi porro odio dicta, a totam non recusandae repellat blanditiis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, magni ex dolorum soluta hic doloribus officia dolor nulla iusto laboriosam excepturi! Doloribus inventore eaque distinctio adipisci voluptatibus, fugiat nulla repellat repudiandae doloremque molestiae ut, quibusdam tenetur nostrum laborum, quo ipsum omnis sequi. Corrupti ullam esse, numquam minus nesciunt cupiditate vero sequi, quaerat, accusantium deserunt commodi explicabo exercitationem aspernatur excepturi eum. Distinctio hic tempora laborum, aliquid dicta aspernatur cumque deleniti tempore necessitatibus consequatur suscipit quasi voluptatem quia tenetur ad! Voluptate, asperiores sit voluptatem facere animi illum enim! Modi accusantium, nisi laborum quasi porro odio dicta, a totam non recusandae repellat blanditiis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, magni ex dolorum soluta hic doloribus officia dolor nulla iusto laboriosam excepturi! Doloribus inventore eaque distinctio adipisci voluptatibus, fugiat nulla repellat repudiandae doloremque molestiae ut, quibusdam tenetur nostrum laborum, quo ipsum omnis sequi. Corrupti ullam esse, numquam minus nesciunt cupiditate vero sequi, quaerat, accusantium deserunt commodi explicabo exercitationem aspernatur excepturi eum. Distinctio hic tempora laborum, aliquid dicta aspernatur cumque deleniti tempore necessitatibus consequatur suscipit quasi voluptatem quia tenetur ad! Voluptate, asperiores sit voluptatem facere animi illum enim! Modi accusantium, nisi laborum quasi porro odio dicta, a totam non recusandae repellat blanditiis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, magni ex dolorum soluta hic doloribus officia dolor nulla iusto laboriosam excepturi! Doloribus inventore eaque distinctio adipisci voluptatibus, fugiat nulla repellat repudiandae doloremque molestiae ut, quibusdam tenetur nostrum laborum, quo ipsum omnis sequi. Corrupti ullam esse, numquam minus nesciunt cupiditate vero sequi, quaerat, accusantium deserunt commodi explicabo exercitationem aspernatur excepturi eum. Distinctio hic tempora laborum, aliquid dicta aspernatur cumque deleniti tempore necessitatibus consequatur suscipit quasi voluptatem quia tenetur ad! Voluptate, asperiores sit voluptatem facere animi illum enim! Modi accusantium, nisi laborum quasi porro odio dicta, a totam non recusandae repellat blanditiis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, magni ex dolorum soluta hic doloribus officia dolor nulla iusto laboriosam excepturi! Doloribus inventore eaque distinctio adipisci voluptatibus, fugiat nulla repellat repudiandae doloremque molestiae ut, quibusdam tenetur nostrum laborum, quo ipsum omnis sequi. Corrupti ullam esse, numquam minus nesciunt cupiditate vero sequi, quaerat, accusantium deserunt commodi explicabo exercitationem aspernatur excepturi eum. Distinctio hic tempora laborum, aliquid dicta aspernatur cumque deleniti tempore necessitatibus consequatur suscipit quasi voluptatem quia tenetur ad! Voluptate, asperiores sit voluptatem facere animi illum enim! Modi accusantium, nisi laborum quasi porro odio dicta, a totam non recusandae repellat blanditiis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, magni ex dolorum soluta hic doloribus officia dolor nulla iusto laboriosam excepturi! Doloribus inventore eaque distinctio adipisci voluptatibus, fugiat nulla repellat repudiandae doloremque molestiae ut, quibusdam tenetur nostrum laborum, quo ipsum omnis sequi. Corrupti ullam esse, numquam minus nesciunt cupiditate vero sequi, quaerat, accusantium deserunt commodi explicabo exercitationem aspernatur excepturi eum. Distinctio hic tempora laborum, aliquid dicta aspernatur cumque deleniti tempore necessitatibus consequatur suscipit quasi voluptatem quia tenetur ad! Voluptate, asperiores sit voluptatem facere animi illum enim! Modi accusantium, nisi laborum quasi porro odio dicta, a totam non recusandae repellat blanditiis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, magni ex dolorum soluta hic doloribus officia dolor nulla iusto laboriosam excepturi! Doloribus inventore eaque distinctio adipisci voluptatibus, fugiat nulla repellat repudiandae doloremque molestiae ut, quibusdam tenetur nostrum laborum, quo ipsum omnis sequi. Corrupti ullam esse, numquam minus nesciunt cupiditate vero sequi, quaerat, accusantium deserunt commodi explicabo exercitationem aspernatur excepturi eum. Distinctio hic tempora laborum, aliquid dicta aspernatur cumque deleniti tempore necessitatibus consequatur suscipit quasi voluptatem quia tenetur ad! Voluptate, asperiores sit voluptatem facere animi illum enim! Modi accusantium, nisi laborum quasi porro odio dicta, a totam non recusandae repellat blanditiis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, magni ex dolorum soluta hic doloribus officia dolor nulla iusto laboriosam excepturi! Doloribus inventore eaque distinctio adipisci voluptatibus, fugiat nulla repellat repudiandae doloremque molestiae ut, quibusdam tenetur nostrum laborum, quo ipsum omnis sequi. Corrupti ullam esse, numquam minus nesciunt cupiditate vero sequi, quaerat, accusantium deserunt commodi explicabo exercitationem aspernatur excepturi eum. Distinctio hic tempora laborum, aliquid dicta aspernatur cumque deleniti tempore necessitatibus consequatur suscipit quasi voluptatem quia tenetur ad! Voluptate, asperiores sit voluptatem facere animi illum enim! Modi accusantium, nisi laborum quasi porro odio dicta, a totam non recusandae repellat blanditiis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, magni ex dolorum soluta hic doloribus officia dolor nulla iusto laboriosam excepturi! Doloribus inventore eaque distinctio adipisci voluptatibus, fugiat nulla repellat repudiandae doloremque molestiae ut, quibusdam tenetur nostrum laborum, quo ipsum omnis sequi. Corrupti ullam esse, numquam minus nesciunt cupiditate vero sequi, quaerat, accusantium deserunt commodi explicabo exercitationem aspernatur excepturi eum. Distinctio hic tempora laborum, aliquid dicta aspernatur cumque deleniti tempore necessitatibus consequatur suscipit quasi voluptatem quia tenetur ad! Voluptate, asperiores sit voluptatem facere animi illum enim! Modi accusantium, nisi laborum quasi porro odio dicta, a totam non recusandae repellat blanditiis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, magni ex dolorum soluta hic doloribus officia dolor nulla iusto laboriosam excepturi! Doloribus inventore eaque distinctio adipisci voluptatibus, fugiat nulla repellat repudiandae doloremque molestiae ut, quibusdam tenetur nostrum laborum, quo ipsum omnis sequi. Corrupti ullam esse, numquam minus nesciunt cupiditate vero sequi, quaerat, accusantium deserunt commodi explicabo exercitationem aspernatur excepturi eum. Distinctio hic tempora laborum, aliquid dicta aspernatur cumque deleniti tempore necessitatibus consequatur suscipit quasi voluptatem quia tenetur ad! Voluptate, asperiores sit voluptatem facere animi illum enim! Modi accusantium, nisi laborum quasi porro odio dicta, a totam non recusandae repellat blanditiis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, magni ex dolorum soluta hic doloribus officia dolor nulla iusto laboriosam excepturi! Doloribus inventore eaque distinctio adipisci voluptatibus, fugiat nulla repellat repudiandae doloremque molestiae ut, quibusdam tenetur nostrum laborum, quo ipsum omnis sequi. Corrupti ullam esse, numquam minus nesciunt cupiditate vero sequi, quaerat, accusantium deserunt commodi explicabo exercitationem aspernatur excepturi eum. Distinctio hic tempora laborum, aliquid dicta aspernatur cumque deleniti tempore necessitatibus consequatur suscipit quasi voluptatem quia tenetur ad! Voluptate, asperiores sit voluptatem facere animi illum enim! Modi accusantium, nisi laborum quasi porro odio dicta, a totam non recusandae repellat blanditiis.
+        </p>
+    </div>
+
+    <script>
+        function wheelHandler() {
+            var pos = document.getElementById("txt");
+            document.getElementById("output").innerText = pos.scrollTop + " px";
+        }
+    </script>
+</body>
+</html>

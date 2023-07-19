@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT DOM</title>
+    <style>
+        body {
+            width: 100%;
+            overflow-x: hidden;
+            height: auto;
+            margin: 0;
+        }
+
+        #userInfo {
+            padding: 20px;
+            border: 2px solid #222;
+            width: 95%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 20px;
+            margin: 0 auto;
+        }
+
+        #userInfo div {
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        #userInfo div h3 {
+            text-transform: uppercase;
+            color: slateblue;
+        }
+
+        #userInfo div img {
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            width: 250px;
+            height: 250px;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>querySelector(), createElement(), textContent(), appendChild()</h1>
+
+    <section id="userInfo"></section>
+
+    <script>
+        var users = [
+            {
+                //key: value
+                id: 1,
+                name: "Pranav",
+                image: "./assets/images/img-7.jpg",
+                email: "pranav@gmail.com",
+                isAdmin: false
+            },
+            {
+                //key: value
+                id: 2,
+                name: "Sourabh",
+                image: "./assets/images/img-8.jpg",
+                email: "sourabh@gmail.com",
+                isAdmin: true
+            },
+            {
+                //key: value
+                id: 3,
+                name: "Ravi",
+                image: "./assets/images/img-9.jpg",
+                email: "ravi@gmail.com",
+                isAdmin: false
+            },
+            {
+                //key: value
+                id: 4,
+                name: "Prasad",
+                image: "./assets/images/img-10.jpg",
+                email: "prasad@gmail.com",
+                isAdmin: true
+            }
+        ];
+
+        console.log('users =', users);
+
+        let userBlock = document.querySelector('#userInfo');
+
+        function printUser(data) {
+            data.forEach(function(item) {
+                //To create custom html tag
+                let card = document.createElement('div');
+                let na = document.createElement('h3');
+                let pic = document.createElement('img');
+                let em = document.createElement('p');
+                let ad = document.createElement('p');
+
+                // Adding contents
+                na.textContent = ` ${item.id} ${item.name}`;
+                pic.src = item.image;
+                em.textContent = `${item.email}`;
+
+                //Join the card
+                card.appendChild(pic);
+                card.appendChild(na);
+                card.appendChild(em);
+
+                userBlock.appendChild(card);
+            })
+        }
+
+        //Calling the function
+        printUser(users);
+    </script>
+</body>
+</html>

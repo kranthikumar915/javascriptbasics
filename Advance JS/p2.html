@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVANCE JAVASCRIPT</title>
+</head>
+<body>
+    <h3>External JS function execution using callback (Asynchronous) </h3>
+
+    <script>
+        function loadScript(path, callback) {
+            let script = document.createElement('script');  // script tag through JS
+            script.src = path;
+            // first call
+            script.onload = function() {
+                callback(script);
+            }
+            document.head.append(script);
+        }
+
+        loadScript('./js/ext.js', (script) => {
+            // call
+            sum(12,44);
+            mul(10,40);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASIC</title>
+</head>
+<body>
+    <h1>Switch case conditional statement (Example)</h1>
+    
+    <p> add, sub, mul, div, rem</p>
+
+    <script>
+        // var key = "rem";
+
+        var key = prompt('Enter any one math operation from (add, sub, mul, div, rem) ?');
+        var a = Number(prompt('Enter input a ?'));
+        var b = Number(prompt('Enter input b ?'));
+
+        switch(key) {
+            case "add":
+                var sum = a + b;
+                document.write(` <h1> Sum = ${sum} </h1> `);
+                break;
+            case "sub":
+                var sub = a - b;
+                document.write(` <h1> Sub = ${sub} </h1> `);
+                break;
+            case "mul":
+                var mul = a * b;
+                document.write(` <h1> Mul = ${mul} </h1> `);
+                break;
+            case "div":
+                var div = a / b;
+                document.write(` <h1> Div = ${div} </h1> `);
+                break;
+            case "rem":
+                var rem = a % b;
+                document.write(` <h1> Rem = ${rem} </h1> `);
+                break;
+            default : 
+                document.write(` <h1> Check your input key </h1>`)
+        }
+    </script>
+</body>
+</html>

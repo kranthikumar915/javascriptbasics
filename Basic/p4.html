@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASIC</title>
+</head>
+<body>
+    <h1> 3 conditional statements</h1>
+
+    <script>
+        //conditional statements
+
+        /*
+
+        1. if statement
+
+            if(condition) {
+                //statements
+            }
+        */
+
+        var a = 13;
+
+        if(a < 20) {
+            document.write(`<h1> The value of a = ${a} is less than 20 </h1>`);
+        }
+    </script>
+
+    <script>
+
+        /*
+
+        1. if-else statement
+
+            if(condition) {
+                //statements
+            } else {
+                //statements
+            }
+        */
+        var x =20;
+
+        if(x < 10) {
+            document.write(`<h1> Condition is true, x = ${x} is less than 10 </h1>`);
+        } else {
+            document.write(`<h1> Condition is false, x = ${x} is greater than 10 </h1>`);
+        }
+    </script>
+
+    <script>
+        var y = 10;
+
+        if(y > 10) {
+            document.write(`<h1> First condition is true, y=${y} is greater than 10 </h1>`);
+        } else if (y < 10) {
+            document.write(`<h1> Second condition is true, y=${y} is less than 10 </h1>`);
+        } else if (y === 10) {
+            document.write(`<h1> Third condition is true, y=${y} is equal to 10 </h1>`);
+        } else {
+            document.write(`<h1> Check your input </h1>`)
+        }
+    </script>
+</body>
+</html>

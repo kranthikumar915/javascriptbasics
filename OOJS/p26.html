@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMASCRIPT</title>
+</head>
+<body>
+    <script>
+        class Rem {
+            constructor(x, y) {
+                this.a = x;
+                this.b = y;
+            }
+
+            calculate() {
+                return this.a % this.b;
+            }
+        }
+
+      
+
+        let newRem = new Rem(30,12);
+        let newRem1 = new Rem(45,10);
+
+        console.log('s =', newRem);
+        console.log('s1 =', newRem1);
+
+        document.write(`<h3> new Rem = ${newRem.calculate()} </h3>`);
+        document.write(`<h3> new Rem = ${newRem1.calculate()} </h3>`);
+
+    </script>
+</body>
+</html>

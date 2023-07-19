@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASIC</title>
+</head>
+<body>
+    <h3>Data Type Conversions</h3>
+
+    <script>
+        var x = "123.343";
+        var y = '1246.6420578654';
+
+        var a = Number(x);      /* convert to any type into number */
+        document.write(` <h3> Number = ${a} </h3> `);
+
+        var a1 = parseInt(x);   // converts into integer value
+        document.write(` <h3> parseInt = ${a1} </h3> `);
+
+        var a2 = parseFloat(x);
+        var a3 = parseFloat(y);
+
+        document.write(` <h3> parseFloat = ${a2} </h3> `);
+        document.write(` <h3> parseFloat = ${a3.toFixed(2)} </h3> `);
+        
+    </script>
+</body>
+</html>

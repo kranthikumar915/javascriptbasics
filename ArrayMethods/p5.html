@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT ARRAY METHODS</title>
+</head>
+<body>
+    <h1>Array Method => filter method</h1>
+
+    <script>
+        var user = [
+            {
+                id: 1,
+                name: "Raju",
+                email: "raju@gmail.com",
+            },
+            {
+                id: 2,
+                name: "John",
+                email: "john@gmail.com",
+            },
+            {
+                id: 3,
+                name: "Chandu",
+                email: "chandu@gmail.com",
+            },
+            {
+                id: 4,
+                name: "Raju",
+                email: "raju123@gmail.com",
+            }
+        ];
+
+        console.log('output', user);
+
+        // array.filter => output is in array format
+        var user1 = user.filter(function(item) {
+            return item.name === "Raju"
+        });
+        console.log('output1', user1);
+
+        // array.find is in object format
+        var user2 = user.find(function(item) {
+            return item.id === 3
+        });
+
+        console.log('output2', user2);
+    </script>
+</body>
+</html>

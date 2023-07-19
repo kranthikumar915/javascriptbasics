@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT DOM</title>
+    <style>
+        section {
+            display: flex;
+        }
+
+        div {
+            margin-right: 20px;
+        }
+
+        label, button {
+            display: block;
+            margin: 10px;
+        }
+
+        .btn {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+
+        select {
+            width: 200px;
+            height: 230px;
+        }
+    </style>
+</head>
+<body>
+    <h1>replaceChildren()</h1>
+
+    <section>
+        <div>
+            <label for="no">No Thanks</label>
+            <select name="no" id="no" multiple size="10">
+                <option value="blue">Blue</option>
+                <option value="white">White</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="deepsyblue">Deepskyblue</option>
+                <option value="teal">Teal</option>
+                <option value="red">Red</option>
+                <option value="darkgray">Darkgray</option>
+                <option value="gold">Gold</option>
+                <option value="yellow">Yellow</option>
+                <option value="slateblue">Slateblue</option>
+                <option value="violet">Violet</option>
+                <option value="black">Black</option>
+                <option value="grey">Grey</option>
+            </select>
+        </div>
+
+        <div class="btn">
+            <button id="to-yes">Add for Selection</button>
+            <button id="to-no">Remove from Selection</button>
+        </div>
+
+        <div>
+            <label for="yes">Yes Please</label>
+            <select name="yes" id="yes" multiple size="10"></select>
+        </div>
+    </section>
+
+    <script>
+        var noSel = document.getElementById("no");
+        var yesSel = document.getElementById("yes");
+
+        var yesBtn = document.getElementById("to-yes");
+        var noBtn = document.getElementById("to-no");
+
+        yesBtn.addEventListener('click', function() {
+            let selOpt = document.querySelectorAll('#no option:checked');
+            console.log('selOpt', selOpt);
+            let existOpt = document.querySelectorAll('#yes option');
+            yesSel.replaceChildren(...selOpt, ...existOpt);
+        });
+
+        noBtn.addEventListener('click', function() {
+            let selOpt = document.querySelectorAll('#yes option:checked');
+            let existOpt = document.querySelectorAll('#no option');
+            noSel.replaceChildren(...selOpt, ...existOpt);
+            /* ... spread operator => operator Array to parameter 
+                ... rest parameter => parameter to Array
+            */
+        })
+
+    </script>
+</body>
+</html>

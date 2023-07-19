@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT OBJECT</title>
+</head>
+<body>
+    <h3>Custom Constructor</h3>
+
+    <button onclick="handler()">Forward</button>
+
+    <script>
+        // class constructor / function constructor / constructor
+
+        function Car() {
+            var x =12;
+            this.title = "Jeep";
+            this.model = 2022;
+            this.fuel = "petrol";
+            this.display = function() {
+                document.write(`<h3> Display function </h3>`);
+            }
+        }
+
+        /* Reference / instance of an constructor */
+        var a = new Car();
+
+        document.write(`<h3> ${ a.title } </h3>`);      // instance.key
+        document.write(`<h3> ${ a['model'] } </h3>`);      // instance['key']
+        document.write(`<h3> ${ a.fuel } </h3>`); 
+        document.write(`<h3> ${ a.display() } </h3>`); 
+        a.display()   
+
+    </script>
+
+    <script>
+        function handler() {
+            history.go(3);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASIC</title>
+</head>
+<body>
+    <h1>Logical Operators</h1>
+
+    <script>
+        var x = prompt('Enter your marks ?');   //prompt is browser object model used to accept user inputs
+
+        // var x = Number(x);   // Number() constructor will help to convert string to number
+
+        var marks = Number(Math.abs(x));  // Math.abs() converts Negative value to positive value
+
+        if(marks < 35){
+            document.write(`<h3> Marks = ${marks} Fail </h3>`);
+        } else if (marks === 35) {
+            document.write(`<h3> Marks = ${marks} Just Pass </h3>`);
+        } else if (marks > 35 && marks < 60) {
+            document.write(`<h3> Marks = ${marks} Second </h3>`);
+        } else if (marks >= 60 && marks < 85){
+            document.write(`<h3> Marks = ${marks} First </h3>`);
+        } else if (marks >= 85 && marks <=100) {
+            document.write(`<h3> Marks = ${marks} First with Distinction </h3>`);
+        } else {
+            document.write(`<h3> Check your input </h3>`);
+        }
+    </script>
+</body>
+</html>

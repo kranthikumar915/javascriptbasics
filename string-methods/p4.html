@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT STRING METHODS</title>
+</head>
+<body>
+    <h3>String Reverse using built in methods</h3>
+
+    <script>
+        var str = "Pranav P Hunagund";
+
+        document.write('<h1> Before reverse =', str, '</h1>');
+
+        function reverseString(data) {
+            return data.split('').reverse().join('');
+            // return data.reverse()
+        }
+
+        var res = reverseString(str);
+        document.write('<h1> After reverse =', res, '<h1>');
+        
+        console.log('split output =', str.split(''));
+        console.log('split and reverse =', str.split('').reverse());
+        console.log('split and reverse and join =', str.split('').reverse().join(''));
+
+    </script>
+</body>
+</html>

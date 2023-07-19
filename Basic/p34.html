@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASIC</title>
+</head>
+<body>
+    <h3>Non Parameter return type function</h3>
+
+    <script>
+        function product() {
+            // var a = 123;
+            var a = prompt('Enter Number input a ?');
+            var b = prompt('Enter Number input b ?');
+
+            return Number(a) * Number(b);       // Number() => constructor
+        }
+
+        var output = product();
+        document.write(`<h3> Product = ${output} </h3>`);
+    </script>
+</body>
+</html>

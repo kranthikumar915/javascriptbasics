@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASIC</title>
+</head>
+<body>
+    <h2> Array -> There are 3 types of array</h2>
+    <h4> 1. Literal Array</h4>
+        <p>a. Array Literal</p>
+        <p>b. Array using constructor</p>
+        <p>a. Array using constructor parameter </p>
+    <h4> 2. Object Array</h4>
+    <h4> 3. JSON (JavaScript Object notation) Array</h4>
+
+    <script>
+        <h3> 2. literal array </h3>
+
+        var nums = [123,3434,343,43,454];  //array of numbers
+
+        var names = ["Pranav", "Sourabh", "Ravi", "Vinay", "Sarath"];  // array of strings
+
+        var arr = ["be-practical", true, 1232];  /* mix data type array */
+
+        var i = 0;
+        while(i < names.length) {
+            document.write(` <p class='first'> ${names[i]}</p> `);
+            i++;
+        }
+
+        var y = 0;
+        while(y < arr.length) {
+            document.write(` <p class='sec'> ${arr[y]}</p> `);
+            y++;
+        }
+    </script>
+    
+</body>
+</html>

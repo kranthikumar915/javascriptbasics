@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMASCRIPT</title>
+</head>
+<body>
+    <h3>Parameter function constructor</h3>
+
+    <script>
+        function Course(ti,du,fe) {
+            this.title = ti;
+            this.fee = fe;
+            this.duration = du;
+        };
+
+        let x1 = new Course('Javascript', '1 month', 1234);
+
+        document.write(`<h3> title = ${x1.title} </h3>`);
+        document.write(`<h3> Fee = ${x1.fee} </h3>`);
+        document.write(`<h3> Duration = ${x1.duration} </h3>`);
+
+        let x2 = new Course('React', '1.5 months', 3455);
+
+        document.write(`<h3> title = ${x2.title} </h3>`);
+        document.write(`<h3> Fee = ${x2.fee} </h3>`);
+        document.write(`<h3> Duration = ${x2.duration} </h3>`);
+
+    </script>
+</body>
+</html>

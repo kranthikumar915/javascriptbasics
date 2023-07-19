@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented JavaScript (OOJS)</title>
+</head>
+<body>
+    <h3>Object property destructure using loop</h3>
+
+    <script>
+        const user = {
+            name: 'Raj',
+            email: 'raj@gmail.com',
+            mobile: '7845129638',
+            age: 25
+        };
+
+        // for ... in
+        for(let item in user) {         // array[keys]
+            document.write(`<h3> ${item} : ${user[item]} </h3>`);  
+        }
+    </script>
+</body>
+</html>

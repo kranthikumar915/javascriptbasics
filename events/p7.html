@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT EVENTS</title>
+</head>
+<body>
+    <h3>Media Events</h3>
+
+    <h3 id="msg"></h3>
+
+    <video src="./assets/media/Akcent - That's My Name (Ultra Music)_HIGH.mp4" controls onplay="playHan()" onpause="pauseHan()" onvolumechange="volHan()" onseeking="seekHan()"></video>
+
+    <script>
+        var msg = document.getElementById("msg");
+
+        function playHan() {
+            msg.innerText = "Started playing video"
+            msg.style.color = "green";
+        }
+
+        function pauseHan() {
+            msg.innerText = "Video Paused";
+            msg.style.color = "crimson";
+        }
+
+        function volHan() {
+            msg.innerText = "Checking Volume";
+            msg.style.color = "deepskyblue";
+        }
+
+        function seekHan() {
+            msg.innerText = "Video timing is changing";
+            msg.style.color = "deeppink";
+        }
+    </script>
+</body>
+</html>

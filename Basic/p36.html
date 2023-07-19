@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASIC</title>
+</head>
+<body>
+    <h3>Function definition and expression</h3>
+
+    <script>
+        //function definition - local functions
+        function sum(a,b) {
+            return a + b;
+        }
+
+        //function expressions
+        var product = function(a,b) {
+            return a * b;
+        }
+
+        /* Arrow function */
+        var rem = (a,b) => {
+            return a % b;
+        }
+
+        document.write(`<h3> Sum = ${ sum(33,44)}</h3>`);
+        document.write(`<h3> Product = ${ product(33,44)}</h3>`);
+        document.write(`<h3> Rem = ${ rem(15,4)}</h3>`);
+
+    </script>
+</body>
+</html>

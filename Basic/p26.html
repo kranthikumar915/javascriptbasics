@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASIC</title>
+</head>
+<body>
+    <h3>Scopes</h3>
+
+    <script>
+        var x = 15;
+
+        /* var is a weaker signal and always have global scope */
+        /* let and const are block scope variable */
+
+        // const a = 256;
+
+        if(x > 12) {
+            var a = 155;      // global
+            // let a =122;    // block   (re-assign the value)
+            // const a =144;    // block   (fixed value - can't re-assign the value)
+            document.write(`<h3>Local (block scope) = ${a} </h3>`);         // block scope            
+        }
+
+        document.write(`<h3>Global (global scope) = ${a} </h3>`);         //global scope
+
+    </script>
+</body>
+</html>

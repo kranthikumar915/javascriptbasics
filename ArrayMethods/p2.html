@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT ARRAY METHODS</title>
+</head>
+<body>
+    <h3> unshift() and shift() </h3>
+
+    <!-- unshift(value) => add new item at beginning position 
+         shift() => remove item from beginning
+    -->
+
+    <script>
+        var x = ['blue', 'white'];
+        document.write(`<h3> Before unshift = ${ x } </h3>`);
+
+        x.unshift("pink");
+        document.write(`<h3> After unshift = ${ x } </h3>`);
+
+        x.unshift("magneta");
+        document.write(`<h3> Before unshift = ${ x } </h3>`);
+
+        x.shift();
+        document.write(`<h3> After shift = ${ x } </h3>`);
+
+        x.shift();
+        document.write(`<h3> After shift = ${ x } </h3>`);
+
+    </script>
+</body>
+</html>

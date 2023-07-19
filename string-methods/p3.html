@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT STRING METHODS</title>
+</head>
+<body>
+    <h3>String Methods</h3>
+
+    <script>
+        var color = "welcometojavascript";
+
+        document.write(`<h3> ${ color } </h3>`);
+        document.write(`<h3> slice(start-index, end-index) method </h3>`);
+        document.write(`<h3> ${ color.slice(3,9) }</h3>`);
+
+        document.write(`<h3> substr(start-index, length) method </h3>`);
+        document.write(`<h3> ${ color.substr(0,9) } </h3>`);
+        document.write(`<h3> ${ color.substr(9,4) } </h3>`);
+
+        document.write(`<hr>`);
+
+        document.write(`<h3 style="color:red;"> Concat Method </h3>`);
+
+        var a = "raj";
+        var b = " kumar";
+
+        document.write(`<h3> concat = ${ a.concat(b) } </h3>`);
+
+        var e = b.trim();   /* trim the white spaces */
+
+        document.write(`<h3> concat with trim = ${ a.concat(e) } </h3>`);
+
+    </script>
+</body>
+</html>

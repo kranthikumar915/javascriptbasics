@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASIC</title>
+</head>
+<body>
+    <h1>Variables - inputs</h1>
+
+    <script>
+        /* 
+            variable = value 
+            x + y = sum
+            x = 10,      // number
+            y = 20
+
+            hi x, welcome to javascript
+            x = "Arun";  // string
+
+            x = true;  //Boolean  (true -> 1 or false -> 0)
+
+            x = [12,33,44,50]   //Array
+
+            x = null            //null
+            y = ""              //empty string
+            z = undefined       //Undefined
+
+            note: JavaScript is case sensitive language
+
+            variable = value
+            a = 123
+            A = 145
+
+            Data types - values
+            1. Number -> integer and floating point numbers
+            2. String -> '', ""
+            3. Boolean -> true, false
+            4. Array -> []
+            5. Object -> { key:value }
+            6. Null, Undefined
+        */
+
+        //datatype variable = value
+
+        var x = 123;  // number
+        var p = 123.343;  //number
+        var x = 12e4;  //number
+        var x1 = true;  //boolean
+        var title = "welcome to javascript";  //string
+
+        //object
+        var user = {
+            //property = key:value
+            name: "Pranav",
+            email: "pranav@gmail.com",
+            age : 23,
+            isAdmin: false,
+            hobbies: ['riding', 'treking', 'driving']
+        };
+        
+        //Array
+        var num = [123,3434,343,454];
+
+        document.write("<h1>" + x + "</h1>");
+        document.write(`<h1> ${x} </h1>`);
+
+        document.write(`<h1> ${num[2]} </h1>`);   // array[index]
+        document.write(`<h1> ${num} </h1>`);        //array
+
+        document.write(`<h1> ${user.name} </h1>`);  // object.name
+        document.write(`<h1> ${user['email']} </h1>`);  // object['key']
+
+        console.log('user = ', user);
+
+    </script>
+</body>
+</html>

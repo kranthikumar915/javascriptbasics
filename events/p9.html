@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT EVENTS</title>
+    <style>
+        body {
+            width: 100% auto;
+            height: 100vh;
+            background-color: #ccc; 
+        }
+
+        .blk {
+            width: 50%;
+            background-color: crimson;
+            color: #fff;
+            padding: 12px;
+        }
+    </style>
+</head>
+<!-- event => event ref as a parameterto the handler function -->
+<body oncontextmenu="contextHandler(event)">
+    <h3>oncontextmenu</h3>
+    <div id="blk" class="blk">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores nemo perferendis cum aliquam magnam quod! Placeat minima ea similique perferendis blanditiis eum voluptas saepe magnam minus ad, nulla sunt natus tempore, aperiam quidem et eius? Natus enim vitae provident cumque architecto odit perspiciatis, magni facere laboriosam libero voluptates voluptas. Ab odio, at optio blanditiis officiis deserunt modi? Quidem optio autem laborum voluptatibus doloremque quibusdam et sint eos hic recusandae error totam obcaecati reiciendis nisi odio neque earum, vitae quam perferendis. Error ullam molestiae ipsam? Officia facere saepe minima, cumque magnam eum quidem tenetur voluptas suscipit repudiandae fugiat commodi ipsum hic.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores nemo perferendis cum aliquam magnam quod! Placeat minima ea similique perferendis blanditiis eum voluptas saepe magnam minus ad, nulla sunt natus tempore, aperiam quidem et eius? Natus enim vitae provident cumque architecto odit perspiciatis, magni facere laboriosam libero voluptates voluptas. Ab odio, at optio blanditiis officiis deserunt modi? Quidem optio autem laborum voluptatibus doloremque quibusdam et sint eos hic recusandae error totam obcaecati reiciendis nisi odio neque earum, vitae quam perferendis. Error ullam molestiae ipsam? Officia facere saepe minima, cumque magnam eum quidem tenetur voluptas suscipit repudiandae fugiat commodi ipsum hic.
+        </p>
+    </div>
+
+    <script>
+        function contextHandler(event) {
+            event.preventDefault();     /* avoid page refresh */
+            alert("Right click has disabled");
+        }
+    </script>
+    
+</body>
+</html>

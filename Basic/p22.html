@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASIC</title>
+</head>
+<body>
+    <h3>Print Alphabetical Characters</h3>
+
+    <script>
+        // A-65 to Z-90
+        for(var i=65; i<=90; i++) {
+            document.write(`<span> ${String.fromCharCode(i)}</span>`);
+        }
+
+        // a-97 to z-122
+        for(var i=97; i<=122; i++) {
+            document.write(`<span> ${String.fromCharCode(i)}</span>`);
+        }
+
+        document.write('<br>');
+
+        //Uppercase Pattern
+        /* 
+            A
+            A   B
+            A   B   C
+            A   B   C   D
+            A   B   C   D   E
+        */
+
+        for(var i=65; i<=69; i++) {
+            for(var j=65; j<=i; j++) {
+                document.write(`<span> ${String.fromCharCode(j)}</span>`)
+            }
+            document.write('<br>');
+        }
+
+        //Lowercase Pattern
+        /* 
+            a
+            a   b
+            a   b   c
+            a   b   c   d
+            a   b   c   d   e
+        */
+
+        for(var i=97; i<=101; i++){
+            for(var j=97; j<=i; j++) {
+                document.write(`<span> ${String.fromCharCode(j)} </span>`);
+            }
+            document.write('<br>');
+        }
+    </script>
+</body>
+</html>

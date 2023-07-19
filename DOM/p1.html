@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT DOM</title>
+</head>
+<body>
+    <section id="block"></section>
+
+    <hr>
+
+    <button id="btn" onclick="btnClick()">Click Me</button>
+
+    <script>
+        document.write(`<h1> Welcome to JavaScript </h1>`);
+
+        document.getElementById("block").innerHTML = `<h3> Custom Location Text </h3>`;
+        document.getElementById("block").style.background = "orange";
+        document.getElementById("block").style.color = "#fff";
+        document.getElementById("block").style.padding = "20px";
+        document.getElementById("block").style.textAlign = "center";
+        document.getElementById("block").style.fontSize = "25px";
+        document.getElementById("block").style.textTransform = "uppercase";
+        document.getElementById("block").style.letterSpacing = "1.2px";
+    </script>
+
+    <script>
+        function btnClick() {
+            document.getElementById("btn").innerText = "Button Clicked ";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMASCRIPT</title>
+</head>
+<body>
+    <h1>get and set methods</h1>
+
+    <script>
+        class Laptop {
+            constructor() {
+                this.brand = '';
+            }
+
+            // get method to return the value
+            get brand() {
+                return `My Laptop Brand Name is ${this.brandName}`;
+            }
+
+            // set method to assign the value
+            set brand(x) {
+                this.brandName = x;
+            }
+        }
+
+        let laptopBrand = new Laptop();
+         
+        laptopBrand.brand = 'Dell Vostro';
+        document.write(`<h1> ${laptopBrand.brand} </h1>`);
+    </script>
+</body>
+</html>

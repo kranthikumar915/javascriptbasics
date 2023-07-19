@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASIC</title>
+</head>
+<body>
+    <script>
+        var x = 123;
+        var y = 456;
+
+        var i = 12;
+
+        var sum = x + y;
+        console.log("Sum =" , sum);
+
+        //Concatenation (combining the string and variables)
+        document.write("<h1>Total sum of = ", sum , " values</h1>");
+        document.write("<h1>Total sum of =" + sum + " values</h1>");
+
+        document.write(`<h1> Sum = ${sum} </h1>`);
+
+        /*
+            Operators =>
+            1. Arithematic Operators  (+, -, *, /, %)
+            2. Logical Operators 
+                (i) Logical AND (&&)
+                    A B A&&B
+                    0 0  0
+                    0 1  0
+                    1 0  0
+                    1 1  1
+                
+                (ii) Logical OR (||)
+                    A B A||B
+                    0 0  0
+                    0 1  1
+                    1 0  1
+                    1 1  1
+
+                (iii) Logical NOT (!)
+                    A !A
+                    0 1  
+                    1 0  
+                 
+            3. Relational/Conditional Operators (>, <, >=, <=, ==(equalto), ===(strictly equalto), !=(not equalto), !==(strictly not equalto))
+                a == b  -> evaluate only values   if(10 == "10")
+                a === b  -> evaluate values and datatypes   if(10 === "10")
+
+            4. Assignment Operators  (=, +=, -=, *=, /=, %=)
+                var x = 12;
+                    x += 20; x = x + 20;
+
+            5. Ternary Operators     syntax:  condition ? true : false;
+
+            6. Miscellaneous Operators -> , . '' "" {} [] ; : () ^ $ # @ `` ~
+
+            7. increment or decrement
+               (i)  pre     ++i   --i       i = i +1, i = i - 1
+               (ii) post    i++   i--
+
+            8. bitwise Operators (&, |, ^, ~)
+        
+        */
+
+        //Example on Ternary Operator
+
+        var x = 12;
+            x += 20;    // x = x + 20;
+
+        var res = x < 100 ? "Say Hi" : "Sorry";
+        document.write(`<h1> Result = ${res} </h1>`);
+
+        if(x < 100) {
+            document.write(`<h3> ${x} Say Hi </h3>`);
+        } else {
+            document.write("<h3> Sorry </h3>");
+        }
+
+        i = i + 1;
+        i = i - 1;
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT DOM</title>
+</head>
+<body>
+    <h1>document.cookies</h1>
+
+    <button onclick="set()">Set Cookies</button>
+    <button onclick="resetCookie()">Clear Cookies</button>
+
+    <h3 id="output"></h3>
+
+    <script>
+        function set() {
+            var x = "Be-Practical";
+            document.cookie = `userId=${x};expires=02 Feb 2023 12:00:00 AM GMT+5.30`;
+            alert("cookie successfully set");
+            window.location.reload();
+        }
+
+        function resetCookie() {
+            if(confirm("Are you sure to clear cookie ?")) {
+                let myTime = new Date();
+                console.log('myTime', myTime);
+
+                myTime.setTime(myTime.getTime()-1);
+
+                document.cookie = `userId=;expires=${myTime.toGMTString()}`;
+                alert("cookie cleared successfully");
+                window.location.reload();
+            } else {
+                return;
+            }
+                
+        }
+
+        /* self constructor / Anonymous function
+            (function () {
+
+            });
+        
+        */
+
+        // userId=be-practical
+
+        (function() {
+            //self constructor function
+            console.log(document.cookie);
+
+            const res = document.cookie.split("=");
+            console.log('result', res);
+
+            if(res[1]) {
+                document.getElementById('output').innerText = `Cookie ${res[0]} = ${res[1]}`;
+            } else {
+                document.getElementById('output').innerText = "No cookie set";
+            }
+        })();
+    </script>
+</body>
+</html>

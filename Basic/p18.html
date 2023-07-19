@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASIC</title>
+</head>
+<body>
+    <h1>Find the average of class students marks and grade</h1>
+
+    <p> 100 <= grade > 75 => First class with distinction</p>
+    <p> 75 <= grade > 60 => First class </p>
+    <p> 60 <= grade > 35 => Second class </p>
+    <p> grade <= 35 => Just Pass </p>
+
+    <script>
+        var students = [
+            ["Raju", 56],
+            ["Sonu", 65.58],
+            ["Naveen", 35.25],
+            ["Sharan", 98],
+            ["Radha", 78.67]
+        ];
+
+        var marks = 0;
+        var avg = 0;
+
+        for(var i=0; i < students.length; i++) {
+            marks += students[i][1];    // marks = marks + students[i][1]
+
+            //document.write(`<p> ${students[i][0]} : ${students[i][1]} </p>`);
+            // document.write(`<p> Total = ${marks}</p>`);
+
+            avg = marks / students.length;
+        }
+
+        document.write(`<p> Total = ${marks} and an avg = ${avg} </p>`);
+
+        if(avg <= 35) {
+            document.write(`<h3> ${avg} => Grade = Just Pass </h3>`);
+        }
+        else if (avg > 35 && avg < 60) {
+            document.write(`<h3> ${avg} => Grade = Second class </h3>`);
+        }
+        else if (avg >=60 && avg < 75) {
+            document.write(`<h3> ${avg} => Grade = First class </h3>`);
+        }
+        else if (avg >=75 && avg <= 100) {
+            document.write(`<h3> ${avg} => Grade = First class with distinction </h3>`);
+        }
+        else {
+            document.write('Check your inputs');
+        }
+    </script>
+
+</body>
+</html>

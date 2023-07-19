@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT OBJECT</title>
+</head>
+<body>
+    <script>
+        function Person() {
+            this.name = "Pranav";
+            this.email = "pranav@gmail.com";
+            this.qualification = "BE";
+            this.mobile = "78945612389";
+            this.personalInfo = function () {
+                document.write(`<h3> ${this.name} ${this.email} ${this.qualification} ${this.mobile}</h3>`)
+            }
+        }
+
+        var info = new Person();
+        console.log(info);
+
+        document.write(`<h3>Name:  ${ info.name} </h3>`);
+        document.write(`<h3>Email:  ${ info.email} </h3>`);
+        document.write(`<h3>Qualification:  ${ info['qualification']} </h3>`);
+        document.write(`<h3>Mobile:  ${ info.mobile} </h3>`);
+        info.personalInfo();
+    </script>
+</body>
+</html>

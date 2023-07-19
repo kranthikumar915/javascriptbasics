@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASIC</title>
+</head>
+<body>
+    <h3> 3. Literal type of Array => Array using constructor Parameters </h3>
+
+    <script>
+        //var instance = new Constructor();
+        //new keyword is used to create instance to any constructor
+        var colors = new Array("blue", "green", "red", "gold");
+
+        var phone = ['+91-9988556677', '8794561238', '9513574628', '7894561239'];
+
+        console.log("Array constructor parameter = ", colors);
+
+        /* forEach loop => dedicated to arrays 
+            array.forEach(function(item) {
+
+            });
+        */
+
+        colors.forEach(function(x, index){
+            document.write(` <h3 style="color:${x}"> ${index} ${x}</h3> `);
+        });
+
+        phone.forEach(function(y, index){
+            document.write(`<h3> ${index} ${y}</h3>`);
+        });
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT EVENTS</title>
+    <style></style>
+</head>
+<body>
+    <button onclick="playHandler()">Play</button>
+    <button onclick="pauseHandler()">Pause</button>
+    <button onclick="fullScreen()">Full Screen</button>
+
+    <video src="./assets/media/Akcent - That's My Name (Ultra Music)_HIGH.mp4" id="earth"></video>
+
+    <script>
+        function playHandler() {
+            document.getElementById("earth").play();
+        }
+
+        function pauseHandler() {
+            document.getElementById("earth").pause();
+        }
+
+        function fullScreen() {
+            var x = document.getElementById("earth");
+            if(x.requestFullscreen) {
+                x.requestFullscreen();
+            }
+        }
+    </script>
+
+</body>
+</html>

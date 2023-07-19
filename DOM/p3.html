@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT DOM</title>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        #blk {
+            width: 100vw;
+            height: 400px;
+            background: teal;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section id="blk"></section>
+    <button onclick="addContent()">Add Content</button>
+
+    <script>
+        function addContent() {
+            var content = 
+                `<div>
+                    <h1> Welcome to JS </h1>
+                    <h3> JavaScript is object based scripting language </h3>
+                    <p> JavaScript is lighweight, object oriented programming language and used to create dynamic web pages.</p>
+                    <button onclick = "removeContent()"> Remove Content </button>
+                </div>`
+
+                document.getElementById("blk").innerHTML = content;
+        }
+
+        function removeContent() {
+            document.getElementById("blk").innerHTML = "";
+        }
+    </script>
+</body>
+</html>

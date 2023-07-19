@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .title {
+    text-align: center;
+    padding: 20px 22px;
+}
+
+.container .title h1 a{
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: #111;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container .calculator {
+    text-align: center;
+    width: 90%;
+}
+
+.calculator #answer {
+    width: 91%;
+    padding: 13px 25px;
+    border: none;
+    outline: none;
+    box-shadow: 4px 3px 2px rgba(0, 0, 0, 0.2);
+    background-color: #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+/* Button */
+.container .calculator button {
+    border: none;
+    width: 20vw;
+    padding: 0.5rem 0;
+    margin: 0.25vmax;
+    border-radius: 0.5rem;
+    height: 8vh;
+    font-size: 1.2rem;
+    font-weight: 800;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calculator .ops {
+    background-color: blue;
+    color: #fff;
+}
+
+.calculator .equal {
+    background-color: green;
+    color: #fff;
+}

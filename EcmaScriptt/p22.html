@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMASCRIPT</title>
+</head>
+<body>
+    <h3>Object.assign()</h3>
+
+    <script>
+       "use strict"
+        /*
+            This method is used to copy the values of all enumerable own properties from one object to another object
+            Object.assign(target, ...source)
+        */
+
+        var x = {
+            name: 'Toyota',
+            Id: 'T1234'
+        };
+
+        var y = Object.assign({}, x);
+
+        console.log('y object =', y);
+
+        for(let item in y) {
+            console.log(y[item]);
+        };
+
+        for(let item in y) {
+            console.log(`${item} : ${y[item]}`);
+        }
+    </script>
+</body>
+</html>

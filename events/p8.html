@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT EVENTS</title>
+</head>
+<body>
+    <h3>focus and blur</h3>
+
+    <form action="">
+        <label for="">Name</label>
+        <input type="text" name="name" id="name" onfocus="focusHandler()" onblur="blurHandler()">
+    </form>
+
+    <script>
+        function focusHandler() {
+            document.getElementById("name").style.background = "orange";
+            document.getElementById("name").style.padding = "10px";
+            document.getElementById("name").style.borderRadius = "5px";
+            document.getElementById("name").style.outline = "none";
+            document.getElementById("name").style.border = "1px solid grey";
+        }
+
+        function blurHandler() {
+            document.getElementById("name").style.background = "grey";
+            document.getElementById("name").style.padding = "10px";
+            document.getElementById("name").style.borderRadius = "5px";
+            document.getElementById("name").style.outline = "none";
+            document.getElementById("name").style.border = "1px solid grey";
+        }
+    </script>
+</body>
+</html>
